@@ -7,13 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 
-@EnableDiscoveryClient
 @SpringBootApplication
+@EnableDiscoveryClient
 public class FacultyApplication {
-    @Bean
-    public MultipartResolver multipartResolver() {
-        return new StandardServletMultipartResolver();
-    }
     public static void main(String[] args) {
         SpringApplication.run(FacultyApplication.class, args);
     }
